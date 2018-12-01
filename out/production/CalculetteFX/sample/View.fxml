@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <StackPane prefHeight="99.0" prefWidth="300.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="99.0" stroke="TRANSPARENT" strokeType="INSIDE" width="301.0" />
+            <TextField fx:id="output" alignment="CENTER" prefHeight="108.0" prefWidth="301.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </StackPane>
+      <Pane prefHeight="343.0" prefWidth="300.0">
+         <children>
+            <Button layoutX="14.0" layoutY="209.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="1" />
+            <Button layoutX="83.0" layoutY="67.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="8" />
+            <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="4" />
+            <Button layoutX="14.0" layoutY="67.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="7" />
+            <Button layoutX="85.0" layoutY="209.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="2" />
+            <Button layoutX="85.0" layoutY="138.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="5" />
+            <Button layoutX="150.0" layoutY="67.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="9" />
+            <Button layoutX="150.0" layoutY="138.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="6" />
+            <Button layoutX="150.0" layoutY="209.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="3" />
+            <Button layoutX="14.0" layoutY="276.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="49.0" prefWidth="46.0" text="0" />
+            <Button layoutX="150.0" layoutY="276.0" mnemonicParsing="false" onAction="#operatorClicked" prefHeight="49.0" prefWidth="46.0" text="=" />
+            <Button layoutX="224.0" layoutY="67.0" mnemonicParsing="false" onAction="#operatorClicked" prefHeight="49.0" prefWidth="46.0" style="-fx-background-color: #f44141;" text="+" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="224.0" layoutY="138.0" mnemonicParsing="false" onAction="#operatorClicked" prefHeight="49.0" prefWidth="46.0" style="-fx-background-color: #f44141;" text="-" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="224.0" layoutY="209.0" mnemonicParsing="false" onAction="#operatorClicked" prefHeight="49.0" prefWidth="46.0" style="-fx-background-color: #f44141;" text="x" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="224.0" layoutY="276.0" mnemonicParsing="false" onAction="#operatorClicked" prefHeight="49.0" prefWidth="46.0" style="-fx-background-color: #f44141;" text="/" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="85.0" layoutY="276.0" mnemonicParsing="false" onAction="#pointClicked" prefHeight="49.0" prefWidth="46.0" text="." />
+            <TextField fx:id="textfield1" editable="false" layoutX="11.0" layoutY="7.0" prefHeight="49.0" prefWidth="190.0" />
+            <Button layoutX="214.0" layoutY="10.0" mnemonicParsing="false" onAction="#resetClicked" prefHeight="41.0" prefWidth="66.0" style="-fx-background-color: #777777;" text="C" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>
